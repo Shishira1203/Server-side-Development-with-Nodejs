@@ -1,7 +1,4 @@
-var rect = {
-    permiter: (x,y) => (2*(x+y)),
-    area: (x,y) => (x*y)
-};
+var rect = require('./rectangle');
 
 function solveRect(l,b){
     console.log("Soving for rectange with l = "+l+" and b = "+b );
@@ -11,7 +8,7 @@ function solveRect(l,b){
     }
     else{
         console.log("The area of the rectangle is "+rect.area(l,b));
-        console.log("The perimter of the rectangle is "+rect.permiter(l,b));
+        console.log("The perimter of the rectangle is "+rect.perimeter(l,b));
     }
 }
 
